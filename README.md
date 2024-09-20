@@ -8,10 +8,10 @@ Let's break down each of the queries in the SQL script to explain what accomplis
 5. Best Customer (Highest Total Spending)- This query identifies the best customer by calculating the total amount they have spent (sum(invoice.total)) across all their invoices. The join operation connects the customer table with the invoice table based on customer_id. After grouping by each customer and sorting by total amount spent (order by total desc), it returns the top customer who has spent the most (limit 1).
 6. Rock Music Listeners- This query retrieves the email, first name, and last name of all customers who have purchased "Rock" music. It joins the customer, invoice, invoice_line, track, and genre tables to filter by genre.name = 'Rock'. The distinct keyword ensures that duplicate entries are not included, so only unique Rock music listeners are listed.
 
-   Summary of Insights
+# Summary_of_Insights
 Employee hierarchy: You can identify who the senior-most employee is.
 1- Invoice hotspots: The country with the most invoices indicates where your most active or valuable customer base is.
-2-Top purchases: Knowing the top three invoices helps understand large orders and high-value transactions.
+2- Top purchases: Knowing the top three invoices helps understand large orders and high-value transactions.
 3- City-wise spending: Identifying the city with the highest total sales shows geographical hotspots for your business.
 4- Best customer: Tracking the highest spending customer can help in loyalty programs or targeted marketing.
 5- Rock music lovers: Listing Rock music listeners could help with targeted promotional campaigns for music genres.
