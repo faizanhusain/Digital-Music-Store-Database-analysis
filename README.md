@@ -1,5 +1,5 @@
 # Digital-Music-Store-Database-analysis
-The Database contains the 11 tables such as album, customer, invoice, track, genre, etc., and this analysis covers various insightful queries on the music store database, about Senior-most employee, Country with most invoices, Top three invoices by total, City with the best customer and Rock music listeners
+The Database contains the 11 tables such as album, customer, invoice, track, genre, etc., and this analysis covers various insightful queries on the music store database, about Senior-most employee, Country with most invoices, Top three invoices by total, City with the best customer and Rock music listeners.
 Let's break down each of the queries in the SQL script to explain what accomplished.
 1. Senior-most Employee- This query fetches the details of the senior-most employee based on their job title level (levels). By sorting the employees in descending order (order by levels desc), the query ensures that the employee with the highest level appears first, and limit 1 restricts the result to only one employee.
 2. Country with Most Invoices- This query counts the number of invoices (count(*)) grouped by each billing_country. The results are then sorted by the count in descending order (order by c desc), meaning the country with the highest number of invoices will appear at the top. This shows which country generates the most revenue in terms of invoices.
@@ -9,9 +9,9 @@ Let's break down each of the queries in the SQL script to explain what accomplis
 6. Rock Music Listeners- This query retrieves the email, first name, and last name of all customers who have purchased "Rock" music. It joins the customer, invoice, invoice_line, track, and genre tables to filter by genre.name = 'Rock'. The distinct keyword ensures that duplicate entries are not included, so only unique Rock music listeners are listed.
 
 # Summary_of_Insights
-Employee hierarchy: You can identify who the senior-most employee is.
-1- Invoice hotspots: The country with the most invoices indicates where your most active or valuable customer base is.
-2- Top purchases: Knowing the top three invoices helps understand large orders and high-value transactions.
-3- City-wise spending: Identifying the city with the highest total sales shows geographical hotspots for your business.
-4- Best customer: Tracking the highest spending customer can help in loyalty programs or targeted marketing.
-5- Rock music lovers: Listing Rock music listeners could help with targeted promotional campaigns for music genres.
+1) Employee hierarchy: You can identify who the senior-most employee is.
+2) Invoice hotspots: The country with the most invoices indicates where your most active or valuable customer base is.
+3) Top purchases: Knowing the top three invoices helps understand large orders and high-value transactions.
+4) City-wise spending: Identifying the city with the highest total sales shows geographical hotspots for your business.
+5) Best customer: Tracking the highest spending customer can help in loyalty programs or targeted marketing.
+6) Rock music lovers: Listing Rock music listeners could help with targeted promotional campaigns for music genres.
